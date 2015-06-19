@@ -15,9 +15,10 @@ A trivial example is:
 	import (
 		"fmt"
 		"github.com/gorilla/context"
-		"github.com/shopsmart/cms/router"
 		"net/http"
 		"log"
+
+		router "github.com/shopsmart/httprouterpersist"
 	)
 
 	func Index(w http.ResponseWriter, r *http.Request) {
@@ -30,7 +31,7 @@ A trivial example is:
 
 	func main() {
 		r := router.New()
-		r.Persist = router.ContextPersistParamsFunc
+		r.Persist = router.ContextPersist
 
 		r.GET("/", Index)
 		r.GET("/hello/:name", Hello)
