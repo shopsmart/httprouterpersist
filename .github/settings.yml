@@ -1,8 +1,8 @@
 repository:
   name: httprouterpersist
-  description: null
+  description: '**DEPRECATED**'
   homepage: null
-  topics: ''
+  topics: deprecated,obsolete,archived
   private: false
   has_issues: true
   has_projects: true
